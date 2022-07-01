@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registration Form</title>
+</head>
+<body class="d-flex flex-row justify-content-around">
+    <form onsubmit="return registerUser()" action="/" name="register" class="d-flex flex-column justify-content-center align-items-center">
+        <h3>Register</h3>
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name:</label>
+            <input class="form-control" type="text" name="firstName" id="fname">
+        </div>
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last Name:</label>
+            <input class="form-control" type="text" name="lastName" id="lname">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input class="form-control" type="email" name="regEmail" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="pword" class="form-label">Password:</label>
+            <input class="form-control" type="password" name="regPword" id="pword">
+        </div>
+        <div class="mb-3">
+            <label for="confPword" class="form-label">Confirm Password:</label>
+            <input class="form-control" type="password" name="conPword" id="confPword">
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
